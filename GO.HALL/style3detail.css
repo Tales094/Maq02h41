@@ -1,0 +1,33 @@
+:root{
+    --couleur-background-main-more: #606060;
+    --couleur-titre-para: white;
+    --couleur-btn-txt-border-background: #CCA57C;
+    --couleur-fond-txt-backgrd: #272727;
+    --couleur-back-tranparent: #00000000;
+    --couleur-formulaire: #000000b7;
+    --couleur-para-service: #ffffff50;
+    --duree-transition: 0.5s;
+    --effet-transition: ease-in-out;
+    --echelle-hover: 1.05;
+}
+
+.header-lien::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--couleur-btn-txt-border-background);
+  transition: width 0.5s ease;
+}
+
+.header-lien:hover::after {
+  width: 120%;
+}
+
+.header-lien:hover{
+    color: var(--couleur-btn-txt-border-background);
+    transition: var(--duree-transition) var(--effet-transition) ;
+}

@@ -1,70 +1,10 @@
-
 :root{
-    --couleur-background-main-more: #606060;
-    --couleur-titre-para: white;
-    --couleur-btn-txt-border-background: #CCA57C;
-    --couleur-fond-txt-backgrd: #272727;
-    --couleur-back-tranparent: #00000000;
-    --couleur-formulaire: #000000b7;
-    --couleur-para-service: #ffffff50;
-    --duree-transition: 0.5s;
-    --effet-transition: ease-in-out;
-    --echelle-hover: 1.05;
+
 }
 
 body{
 
 }
-.li-nav {
-  
-    flex: 1;
-}
-
-.logo-imag {
-    flex:  0  0 300px;
-}
-.header-lien {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  display: block;
-
-}
-
-.header-lien::after {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  right: 0;
-  left: 50%;
-  width: 150%;
-  height: 2px;
-  background-color: var(--couleur-btn-txt-border-background);
-    transform: translateX(-50%);
-  transition: opacity 0.3s ease, width 0.6s ease;
-  opacity: 0;
-}
-
-.header-lien:hover::after {
-  /* width: 120%; */
-  opacity: 1;
-}
-
-.header-lien:hover{
-    color: var(--couleur-btn-txt-border-background);
-    transition: var(--duree-transition) var(--effet-transition) ;
-}
-
-
-
-
-
-
-
-
-
-
-
 /* incrustation de l'image de fond du header */
 header{
     position: relative;
@@ -79,23 +19,29 @@ header{
 }
 /* configuration de la bar de navigation */
 .entete{
-   
+     max-width: 1200px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
     border: 2px solid black;
     border: none;
     /* background-color: rgba(0, 0, 0, 0.192); */
-    color: var(--couleur-para-service);
+    color: white;
     padding: 0;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     }
 /* Positionnement des element dans la bar de navigation */
-.navigation{  
-    max-width: 1200px;
-    margin: 0 auto;
- 
+.navigation{
     display: flex;
     align-items: center;
     gap: 30px;
     list-style: none;
+    margin: 0;
     padding: 0;   
     flex-wrap: wrap;
 }
@@ -103,7 +49,7 @@ header{
 .header-lien{
     text-align: center;
     text-decoration: none;
-    color: var(--couleur-titre-para);
+    color: white;
 }
 /* incrustation de l'image du header au centre*/
 .logo-imag{
@@ -120,7 +66,7 @@ header{
 }
 /* Contenu du header(h1-p-bouton'look more' */
 .contenu{
-    color: var(--couleur-titre-para);
+    color: white;
     display: block;
     margin-top: 190px;
     padding: 64px; 
@@ -132,13 +78,13 @@ header{
 }
 /* Configuration du bouton 'look more' */
 .lookmore{   
-    color: var(--couleur-titre-para);
+    color: white;
     border: 1px solid black;
     border: none;
     border-radius: 60px;
     padding: 5px 25px;
     text-decoration: none;
-    background-color: var(--couleur-btn-txt-border-background);
+    background-color: #CCA57C;
     text-align: center; 
 }
 /* Positiionnement du bouton 'look more' */
@@ -152,7 +98,7 @@ header{
 .media-back{
  display: flex;
  flex-direction: column;
- background-color: var(--couleur-fond-txt-backgrd);
+ background-color: #272727;
  padding: 10px 15px;
  border-radius: 8px;
 
@@ -173,21 +119,29 @@ header{
 }
 /* Couleur des social-lien */
 .media-effet{
-    background-color: var(--couleur-fond-txt-backgrd);
+    background-color: #272727;
   
 }
 /* Effet hover-survol des social-lien */
 .media-effet:hover{
-    background-color: var(--couleur-btn-txt-border-background);
+    background-color: #CCA57C;
 }
 
+
+
+
+
+
+
+
 /* Main */
+
 
 /*SECTION 1  */
 
 /* color arriere plan du main */
 main{
-    background-color: var(--couleur-background-main-more); 
+    background-color: #606060; 
 }
 /* Aligne les element en ligne avec un espace entre eux(texte et image) */
 .contenaire-txt-img{
@@ -199,7 +153,7 @@ main{
 } */
 /* Color de fond section 1 */
 .aboutgohall{
-    background-color: var(--couleur-fond-txt-backgrd);
+    background-color: #272727;
     /* display: flex; */
 }
 /* ?????? */
@@ -218,7 +172,7 @@ main{
 /* color h2 et center */
 h2{
     text-align: center;
-    color: var(--couleur-titre-para);   
+    color: white;   
 }
  /*positionnemenet hauteur du titre avec un margin-bottom  */
 .placement-title-h{
@@ -226,14 +180,14 @@ h2{
 }
 /* color titre et paragraphe section 1 */
 .gohall, #para2colr{
-    color: var(--couleur-btn-txt-border-background);
+    color: #CCA57C;
     
 }
 /* Configuration du 1er paragraphe */
 .paraweturn{
     display: flex;
     flex-direction: column;
-    color: var(--couleur-titre-para);
+    color: white;
     font-weight: bolder;
     margin-bottom: 10px;
 }
@@ -253,13 +207,13 @@ h2{
 /* Ajoute une border-letf au paragraphe du millieu 
 avec un pading pour lespacement entre la bar et le txt */
 #para2colr{
-    border-left: 3px solid var(--couleur-btn-txt-border-background);
+    border-left: 3px solid #CCA57C;
     padding-left: 70px;
     
 }
 /* color pour les paragraphe */
 p{
-    color: var(--couleur-titre-para);
+    color: white;
     
 }
 /* Reglage de la dimention de l'image et son placement */
@@ -291,22 +245,28 @@ une position absolute pour quil soi lier a son element(image LONDON)  */
     border: 1px solid black;
     border: none;
     padding: 5px 8px;
-    background-color: var(--couleur-btn-txt-border-background);
+    background-color: #CCA57C;
     text-align: center;     
 }
+
+
+
+
+
+
 
 /* SECTION 2 */
 /* color du 2eme mot du title */
 .projet-clr{
-    color: var(--couleur-fond-txt-backgrd);
+    color: #272727;
 }
 /* Color du title h3 */
 h3{
-    color: var(--couleur-titre-para);
+    color: white;
 }
 /* Color duParagraphe section 2 + espacement(margin-top) */
 .para-color-projets{
-    color: var(--couleur-fond-txt-backgrd) ;
+    color:#272727 ;
     margin-top: 60px;
 }
 /* Aligne les element en ligne avec un espacement(gap) */
@@ -318,7 +278,6 @@ h3{
 pour attiré son element */
 .image-paris, .image-london{
     position: relative;  
-    min-width: 200px;
 }
 /* Reglage position top letf et 
 position absolute pour se diregé vers on element relative(image paris) */
@@ -400,37 +359,37 @@ position absolute pour se diregé vers on element relative(image london) */
 /* Color des span(txt dans limage) */
 .paris-span, .london-span{
     /* color: #CCA57C; */
-    color: var(--couleur-btn-txt-border-background);
+    color: #CCA57C;
 }
 /* Color fond About Projet(background section 2) */
 .about-projet{
-    background-color: var(--couleur-btn-txt-border-background);   
+    background-color: #CCA57C;   
 }
 /* Réglage border Mois(Janvier-Mars) 
 avec display inline mais le border que sur le txt */
 .mois-border-background{
     display: inline;
-    color: var(--couleur-titre-para);
+    color: white;
     border: 1px solid black;
     border: none;
     border-radius: 3px;
     padding: 5px 14px;
     text-decoration: none;
-    background-color: var(--couleur-fond-txt-backgrd) ;
+    background-color: #272727 ;
 }
 
 /* Section 3 */
 /* Color du titlte h4 */
 h4{
-    color: var(--couleur-titre-para);
+    color: white;
 }
 /* Color des paragraphe */
 .about-para-service{
-    color: var(--couleur-para-service);
+    color: #ffffff50;
 }
 /* Color du fond de about service(background) */
 .develop{
-    background-color: var(--couleur-fond-txt-backgrd);
+    background-color: #272727;
 }
 /* Aligne tout les element en ligne(rows) */
 .world-icon{
@@ -446,7 +405,7 @@ son paragraphe en column avec un espacemententre les 2(gap) */
 /* Réglage de l'image World 
 avec un border en haut et en bas et réglage de la dimention */
 .world{
-    border: 3px solid var(--couleur-btn-txt-border-background);
+    border: 3px solid #CCA57C;
     border-left: none;
     border-right: none;
     object-fit: contain;
@@ -463,29 +422,14 @@ avec un border en haut et en bas et réglage de la dimention */
 /* Réglage bouton MORE-Color-padding-background 
 et avec un border left */
 .more-service{
-    color: var(--couleur-btn-txt-border-background);
-    border-left: 3px solid var(--couleur-btn-txt-border-background);
+    color: #CCA57C;
+    border-left: 3px solid #CCA57C;
     text-decoration: none;
     padding: 3px 55px;
-    background-color: var(--couleur-background-main-more);
-    
-    /* transform: translate(0);
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.6s ease; */
+    background-color: #606060;
+   
 }
     
-.more-service:hover{
-    background-color: var(--couleur-btn-txt-border-background);
-    color: var(--couleur-fond-txt-backgrd);
-    /* transform: translate(-50px); */
-
-}
-
-
-
-
-
-
-
 /* footer */
 /* incrustatiotn-Dimention de limage background footer */
 footer{
@@ -514,7 +458,7 @@ h5{
 
 /* Color des txt-formulaire(name-email-msg) */
 #full-name, #email, .backgroundformulaire::placeholder{
-    color: var(--couleur-titre-para);
+    color: white;
 }
 
 /* incrustation de l'image sur le footer,Réglage de l'image dimenention */
@@ -537,7 +481,7 @@ h5{
 /* Réglage formulaire taille-position-background */
 .formulaire{
     margin-top: 60px;
-    background-color: var(--couleur-formulaire);
+    background-color: #000000b7;
     
     flex-direction: column;
     justify-content: center;
@@ -563,7 +507,7 @@ h5{
 }
 /* configuration du formulaire */
 .backgroundformulaire{
-    background-color: var(--couleur-back-tranparent);
+    background-color: #00000000;
     border: none;
     border-bottom: 1px solid white;
     height: auto;

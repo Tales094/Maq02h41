@@ -1,0 +1,10 @@
+.quest{
+    margin-top: 60px;
+    background-image: url(image/paris.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    height: 375px;
+    width: 375px;
+}
