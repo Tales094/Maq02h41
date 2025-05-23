@@ -1,0 +1,430 @@
+:root{
+
+}
+
+body{
+
+}
+/* incrustation de l'image de fond du header */
+header{
+    position: relative;
+    background-image: url(image/bg_header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    max-width: 100%;
+
+    flex-wrap: wrap; 
+}
+/* configuration de la bar de navigation */
+.entete{
+     max-width: 1200px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid black;
+    border: none;
+    /* background-color: rgba(0, 0, 0, 0.192); */
+    color: white;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+/* Positionnement des element dans la bar de navigation */
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;   
+    flex-wrap: wrap;
+}
+/* configuration des lien dans le menu */
+.header-lien{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+/* incrustation de l'image du header au centre*/
+.logo-imag{
+    background-image: url(image/logo_header.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 300px;
+} 
+/* Effet hover sur l'image(change l'image 'logo_header-->logo_hover' */
+.logo-imag:hover{
+    background-image: url(image/logo_hover.png);
+}
+/* Contenu du header(h1-p-bouton'look more' */
+.contenu{
+    color: white;
+    display: block;
+    margin-top: 190px;
+    padding: 64px; 
+    gap: 15px;
+    max-width: 80%;
+    text-align: right;
+    flex-wrap: wrap;
+  
+}
+/* Configuration du bouton 'look more' */
+.lookmore{   
+    color: white;
+    border: 1px solid black;
+    border: none;
+    border-radius: 60px;
+    padding: 5px 25px;
+    text-decoration: none;
+    background-color: #CCA57C;
+    text-align: center; 
+}
+/* Positiionnement du bouton 'look more' */
+.more{
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px; 
+}
+/* Configuration des social-lien 'facebook...' */
+.media-back{
+ display: flex;
+ flex-direction: column;
+ background-color: #272727;
+ padding: 10px 15px;
+ border-radius: 8px;
+
+}
+/* Positionnement des social-lien */
+.media{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    
+    display: flex;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    /* margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px; */
+ 
+}
+/* Couleur des social-lien */
+.media-effet{
+    background-color: #272727;
+  
+}
+/* Effet hover-survol des social-lien */
+.media-effet:hover{
+    background-color: #CCA57C;
+}
+
+/* Main */
+
+/*SECTION 1  */
+main{
+    background-color: #606060; 
+}
+.contenaire-txt-img{
+    display: flex;
+    gap: 20px;
+}
+/* .contenaire-txt-img > div {
+    text-align: left;
+} */
+.aboutgohall{
+    background-color: #272727;
+    /* display: flex; */
+}
+.contenaire-flex{
+    display: flex;
+    /* gap: 60px; */
+}
+.section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px;
+    /* max-height: 705px; */
+}
+
+.develop{
+    background-color: #272727;
+}
+h2{
+    text-align: center;
+    color: white;   
+}
+        
+.placement-title-h{
+    margin-bottom: 80px;
+}
+
+
+
+.gohall, #para2colr{
+    color: #CCA57C;
+    
+}
+.paraweturn{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.about-para-gohall{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 20px;
+
+}
+
+.para2color {
+    /* padding: 40px;     */
+    
+}
+#para2colr{
+    border-left: 3px solid #CCA57C;
+    padding-left: 70px;
+    
+}
+p{
+    color: white;
+    
+}
+.londonhall img{
+    object-fit: contain;
+    width: 850px;
+    height: 350px;
+    
+
+    margin-top: 50px;
+    align-items: center;
+
+}
+.londonhall{
+    position: relative;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#londonhall{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 10px;
+    display: inline;
+    border: 1px solid black;
+    border: none;
+    padding: 5px 8px;
+    background-color: #CCA57C;
+    text-align: center;     
+}
+
+/* SECTION 2 */
+.projet-clr{
+    color: #272727;
+}
+h3{
+    color: white;
+}
+.para-color-projets{
+    color:#272727 ;
+}
+.paris-flex{
+    display: flex;
+    gap: 20px;
+}
+
+.image-paris, .image-london{
+    position: relative;
+    
+}
+.paris-text-background-one{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.paris-text-background-two{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+.paris-text-background-tree{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+.london-text-background-one{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.london-text-background-two{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+.london-text-background-tree{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.years-of-success{
+    color: black;
+}
+.years{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   flex-wrap: wrap;
+    
+}
+.tweelve{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 60px;
+}
+.concert-image{
+    width: 800px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* .image-paris{
+    background-image: url(image/paris.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+.paris-span, .london-span{
+    /* color: #CCA57C; */
+    color: #CCA57C;
+}
+.about-projet{
+    background-color: #CCA57C;   
+}
+.mois-border-background{
+    display: inline;
+    color: white;
+    border: 1px solid black;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 14px;
+    text-decoration: none;
+    background-color: #272727 ;
+}
+/* Section 3 */
+h4{
+    color: white;
+}
+.about-para-service{
+    color: #ffffff50;
+}
+
+
+.world-icon{
+    display: flex; 
+}
+.wolrd-class{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.world{
+    border: 3px solid #CCA57C;
+    border-left: none;
+    border-right: none;
+    object-fit: contain;
+    width: 400px;
+    height: 200px;
+    flex-wrap: wrap;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.more-service{
+    color: #CCA57C;
+    border-left: 3px solid #CCA57C;
+    text-decoration: none;
+    padding: 3px 55px;
+    background-color: #606060;
+   
+}
+    
+
+    
+
+
+/* footer */
+footer{
+    background-image: url(image/bg_footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 60px; 
+    max-width: 900px;
+    gap: 20px;
+   
+       
+}
+.footer-resquest{
+    background-image: url(image/visuelgauche.jpg);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+}
+.formulaire{
+    background-color: #000000b7;
+
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+h5{
+    color: white;
+}
+
+.bouton-envoyer{
+    border: 1px solid black;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    background-color: #CCA57C;
+    padding: 8px;
+    font-weight: bolder ;
+    cursor: pointer;
+}
+.backgroundformulaire{
+    background-color: #00000000;
+    border: none;
+    border-bottom: 1px solid white;
+}
